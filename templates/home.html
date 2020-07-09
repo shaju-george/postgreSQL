@@ -4,10 +4,12 @@
 
 <h1>hello {{ name }} !!!</h1>
 
-<form action="add">
+<form action="add" method="POST">
+
+        {% csrf_token %}
 
     enter 1st number : <input type="text" name ="number1"><br>
-    enter 1st number : <input type="text" name ="number2"><br>
+    enter 2nd number : <input type="text" name ="number2"><br>
     add              :  <input type="submit">
 
 </form>
